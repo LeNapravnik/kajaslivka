@@ -62,7 +62,7 @@ strong {
 
 .contact-bar {
     color: #fff;
-    background: #39a3d4;
+    background: #65ad57;
     height: 84px;
     font-size: 14px;
 }
@@ -103,7 +103,7 @@ strong {
 .social-icon:hover,
 .social-icon:focus {
     color: #fff;
-    background: #5bd0ec;
+    background: #71d25d;
 }
 
 /* NAVIGATION */
@@ -118,6 +118,8 @@ strong {
 .logo a {
     display: block;
     margin-top: 24px;
+    width: 200px;
+    height: 30px;
 }
 .navigation {
     float: right;
@@ -150,4 +152,71 @@ strong {
 .navigation a:hover,
 .navigation a:focus {
     color: #de5728;
+}
+
+/* ARTICLE */
+.text-center {
+    text-align: center;
+}
+
+.post-header {
+    height: 166px;
+    background: url('../img/autumn.jpg') center -200px no-repeat;
+}
+
+.post-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    background: #de5728;
+    padding: 18px 46px;
+    border-radius: 7px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-top: 36px;
+}
+
+.post-content {
+    padding-bottom: 150px;
+}
+
+.post-content h2 {
+    color: #323232;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.controls {
+    width: 642px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.controls a {
+    font-size: 22px;
+    font-weight: 300;
+    color: #65ad57;
+    text-transform: uppercase;
+    padding: 0 25px;
+    line-height: 48px;
+    display: block;
+}
+
+.controls a:hover,
+.controls a:focus,
+.controls .selected a {
+    color: #fff;
+    background: #65ad57;
+    border-radius: 4px;
+}
+
+.gallery {
+    font-size: 0;
+}
+
+.gallery img {
+    width: 360px;
+    height: 220px;
 }

@@ -1,7 +1,7 @@
 /* GENERAL */
 body {
     color: #323232;
-    background: #eeefed;
+    background: #F7FFE8;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -57,11 +57,11 @@ strong {
 /* CONTACT */
 .contact-bar,
 .personal a {
-    color: #fff;
+    color: #F7F3D4;
 }
 
 .contact-bar {
-    color: #fff;
+    color: #F7F3D4;
     background: #65ad57;
     height: 84px;
     font-size: 14px;
@@ -72,14 +72,18 @@ strong {
     float: left;
 }
 
-.social {
-    float: right;
-    margin-top: 18px;
+.personal li {
+    margin-right: 70px;
 }
 
 .personal .fa {
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 5px;
+}
+
+.social {
+    float: right;
+    margin-top: 18px;
 }
 
 .social .fa {
@@ -92,8 +96,8 @@ strong {
     line-height: 46px;
     height: 48px;
 
-    color: #989898;
-    background: #eeefed;
+    color: #C9C184;
+    background: #F7FFE8;
     text-align: center;
 
     border-radius: 2px;
@@ -102,13 +106,13 @@ strong {
 
 .social-icon:hover,
 .social-icon:focus {
-    color: #fff;
+    color: #F7F3D4;
     background: #71d25d;
 }
 
 /* NAVIGATION */
 .nav-bar {
-    background: #f2f2f2;
+    background: #FFFEE8;
 }
 
 .logo {
@@ -120,7 +124,9 @@ strong {
     margin-top: 24px;
     width: 200px;
     height: 30px;
+    color: #D1A30C;
 }
+
 .navigation {
     float: right;
 }
@@ -132,15 +138,15 @@ strong {
 }
 
 .navigation li {
-    border-left: 1px solid #cecece;
+    border-left: 1px solid #D1C98E;
 }
 
 .navigation li:last-child {
-    border-right: 1px solid #cecece;
+    border-right: 1px solid #D1C98E;
 }
 
 .navigation a {
-    color: #a6a6a6;
+    color: #D1C98E;
     display: block;
     width: 136px;
     height: 120px;
@@ -151,7 +157,7 @@ strong {
 .selected a,
 .navigation a:hover,
 .navigation a:focus {
-    color: #de5728;
+    color: #D1A30C;;
 }
 
 /* ARTICLE */
@@ -161,14 +167,14 @@ strong {
 
 .post-header {
     height: 166px;
-    background: url('../img/autumn.jpg') center -200px no-repeat;
+    background: url("../img/hugo_moss_baruna_front.jpg") center -560px no-repeat;
 }
 
 .post-title {
-    color: #fff;
+    color: #F7F3D4;
     font-size: 45px;
     font-weight: 600;
-    background: #de5728;
+    background: #D1A30C;
     padding: 18px 46px;
     border-radius: 7px;
     display: inline-block;
@@ -207,7 +213,7 @@ strong {
 .controls a:hover,
 .controls a:focus,
 .controls .selected a {
-    color: #fff;
+    color: #F7F3D4;
     background: #65ad57;
     border-radius: 4px;
 }
@@ -219,4 +225,81 @@ strong {
 .gallery img {
     width: 360px;
     height: 220px;
+}
+
+/* FOOTER */
+.pre-footer {
+    color: #F7FFE8;
+    background: #323232;
+    text-align: center;
+}
+
+.pre-footer .container {
+    width: 400px;
+    padding: 40px 0 60px 0;
+}
+
+.pre-footer p {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.pre-footer strong {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.pre-footer .personal li {
+    margin-right: 0;
+}
+
+.pre-footer .personal li:first-child {
+    margin-right: 60px;
+}
+
+footer {
+    font-size: 14px;
+}
+
+footer p {
+    color: #a6a6a6;
+    float: left;
+    padding-left: 200px;
+}
+
+footer p a {
+    color: #D1A30C;
+    font-weight: 600;
+}
+
+footer p,
+footer .menu {
+    margin: 32px 0 32px 0;
+}
+
+footer .menu {
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+footer .menu a {
+    color: #989898;
+}
+
+footer .menu a:hover,
+footer .menu a:focus {
+    text-decoration: underline;
+}
+
+footer li:after {
+    content: "/";
+    color: #989898;
+    margin: 0 8px;
+}
+
+footer li:last-child:after {
+    content: "";
 }

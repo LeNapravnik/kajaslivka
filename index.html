@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin,latin-ext">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/selectordie.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://kit.fontawesome.com/8fdb7f27cb.js" crossorigin="anonymous"></script>
@@ -35,9 +36,11 @@
         <div class="nav-bar">
             <div class="container">
                 <h1 class="logo">
-                    <a href="#">LeNa</a>
+                    <a href="#">
+                        <strong>Le</strong>Na<i class="fa fa-hippo"></i>
+                    </a>
                 </h1>
-                <nav>
+                <nav class="group">
                     <ul class="menu navigation">
                         <li><a href="index.html"><i class="fa fa-house fa-2x"></i>Home</a></li>
                         <li><a href="portfolio.html"><i class="fa fa-laptop-file fa-2x"></i>Portfolio</a></li>
@@ -68,7 +71,18 @@
                         <li><a href="video.html">Video</a></li>
                     </ul>
 
-                    <div class="gallery">
+                    <form class="menu-dropdown">
+                        <select onchange="location = this.options[this.selectedIndex].value;">
+                            <option value="web.html">Web</option>
+                            <option value="branding.html">Branding</option>
+                            <option value="fotografie.html">Fotografie</option>
+                            <option value="video.html">Video</option>
+                        </select>
+                    </form>
+                </div>
+
+                <section class="gallery">
+                    <div class="container">
                         <a href="img/buldocka_sleeping.jpg">
                             <img src="../img/thumbs/buldocka_sleeping.jpg" alt="">
                         </a>
@@ -97,7 +111,7 @@
                             <img src="../img/thumbs/cmelak.jpg" alt="">
                         </a>
                     </div>
-                </div>
+                </section>
             </div>
         </article>
     </main>
@@ -105,7 +119,7 @@
         <div class="container">
             <p>
                 <strong>Zaujala jsem Vás pro Váš projekt?</strong>
-                <br>Zavolejte mi nebo napište
+                Zavolejte mi nebo napište
             </p>
             <ul class="menu personal">
                 <li><i class="fa fa-phone"></i><a href="tel:+420000111222">+420 000 111 222</a></li>
@@ -116,7 +130,10 @@
 
     <footer>
         <div class="container">
-            <p>
+            <p class="logo">
+                <strong>Le</strong>Na<i class="fa fa-hippo"></i>
+            </p>
+            <p class="author">
                 Návrh a design připravila LeNa
                 <a href="mailto:sedinaparezu@gmail.com">sedinaparezu@gmail.com</a>
             </p>
@@ -128,6 +145,11 @@
             </ul>
         </div>
     </footer>
+
+    <script src="js/selectordie.js"></script>
+    <script>
+        $(".menu-dropdown select").selectOrDie();
+    </script>
 
 </body>
 </html>

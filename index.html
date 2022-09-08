@@ -1,155 +1,210 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>RoaringMummy</title>
-
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin,latin-ext">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/selectordie.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="palivové dřevo, Děčín, Všemily, lesní, dřevo, rizikové, kácení nebezpečných stromů, strom, prodej, dřeva, arboristika ">
+    <meta name="description" content="Karel Slivka, Děčín - rizikové kácení stromů, prodej palivového dřeva, prodej řeziva, arboristika   tel: +420 602 964 413">
+    <title>Karel Slivka - rizikové kácení stromů, prodej dřeva, prodej řeziva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+	<link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" type="text/css">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/features.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/fun.css">
+	<link rel="stylesheet" href="./css/parallax.css">
 
     <script src="https://kit.fontawesome.com/8fdb7f27cb.js" crossorigin="anonymous"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src=https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+	<script>
+		seamless.polyfill();
+	</script>
 </head>
 <body>
+    <nav class="main-nav">
+		<ul class="menu container">
+            <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#kaceni">Rizikové kácení, sekání zahrad, prodej dřeva</a></li>
+			<li><a href="#pila">Pila</a></li>
+			<li><a href="#kontakty">Kontakty</a></li>
+		</ul>
+	</nav>
+
+    <div class="content-wrapper">
+
+		<div id="uvod"></div>
+
     <header>
-        <div class="contact-bar">
-            <div class="container">
-                <ul class="menu personal">
-                    <li><i class="fa fa-phone"></i><a href="tel:+420000111222">+420 000 111 222</a></li>
-                    <li><i class="fa fa-envelope"></i><a href="mailto:sedinaparezu@gmail.com">sedinaparezu@gmail.com</a></li>
-                </ul>
-                <ul class="menu social">
-                    <li><a href="#" class="social-icon"><i class="fa fa-github"></i></a></li>
-                    <li><a href="#" class="social-icon"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" class="social-icon"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-bar">
-            <div class="container">
-                <h1 class="logo">
-                    <a href="#">
-                        <strong>Le</strong>Na<i class="fa fa-hippo"></i>
-                    </a>
-                </h1>
-                <nav class="group">
-                    <ul class="menu navigation">
-                        <li><a href="index.html"><i class="fa fa-house fa-2x"></i>Home</a></li>
-                        <li><a href="portfolio.html"><i class="fa fa-laptop-file fa-2x"></i>Portfolio</a></li>
-                        <li><a href="about.html"><i class="fa fa-circle-info fa-2x"></i>About</a></li>
-                        <li><a href="contact.html"><i class="fa fa-location-dot fa-2x"></i> Contact</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </div>
+        <h1 class="logo">
+            <a href="#">
+                <strong>Karel Slivka</strong><i class="fa-solid fa-tree"></i>
+            </a>
+        </h1>
+        <div class="header-bg"></div>
     </header>
-    <main>
-        <article>
-            <header class="post-header">
-                <div class="container">
-                    <h1 class="post-title">Moje portfolio</h1>
-                </div>
-            </header>
-            <div class="post-content">
-                <div class="container">
-                    <h2>Věta o tom, jak jsme šikovný v programování a tvorbě webů. Jsme moc šikovný a proto byste nám mohli zavolat třeba. Nebo napsat, nebo tak.</h2>
+	<main>
+        <div class="parallax" inserted-by="stylers-cloud">
 
-                    <ul class="menu controls">
-                        <li class="selected"><a href="index.html">Všechno</a></li>
-                        <li><a href="web.html">Web</a></li>
-                        <li><a href="branding.html">Branding</a></li>
-                        <li><a href="fotografie.html">Fotografie</a></li>
-                        <li><a href="video.html">Video</a></li>
-                    </ul>
+            <section class="features container">
 
-                    <form class="menu-dropdown">
-                        <select onchange="location = this.options[this.selectedIndex].value;">
-                            <option value="web.html">Web</option>
-                            <option value="branding.html">Branding</option>
-                            <option value="fotografie.html">Fotografie</option>
-                            <option value="video.html">Video</option>
-                        </select>
-                    </form>
-                </div>
+                <div id="kaceni"></div>
 
-                <section class="gallery">
-                    <div class="container">
-                        <a href="img/buldocka_sleeping.jpg">
-                            <img src="../img/thumbs/buldocka_sleeping.jpg" alt="">
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
                         </a>
-                        <a href="img/hugo_slepys.jpg">
-                            <img src="../img/thumbs/hugo_slepys.jpg" alt="">
-                        </a>
-                        <a href="img/hugo_moss_baruna_front.jpg">
-                            <img src="../img/thumbs/hugo_moss_baruna_front.jpg" alt="">
-                        </a>
-                        <a href="img/hugo_moss_baruna_back.jpg">
-                            <img src="../img/thumbs/hugo_moss_baruna_back.jpg" alt="">
-                        </a>
-                        <a href="img/kralicek.jpg">
-                            <img src="../img/thumbs/kralicek.jpg" alt="">
-                        </a>
-                        <a href="img/na_pastve.jpg">
-                            <img src="../img/thumbs/na_pastve.jpg" alt="">
-                        </a>
-                        <a href="img/ropucha.jpg">
-                            <img src="../img/thumbs/ropucha.jpg" alt="">
-                        </a>
-                        <a href="img/slepys.jpg">
-                            <img src="../img/thumbs/slepys.jpg" alt="">
-                        </a>
-                        <a href="img/cmelak.jpg">
-                            <img src="../img/thumbs/cmelak.jpg" alt="">
-                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Rizikové kácení stromů</h2>
+                        <h3></h3>
+                        <p>
+                            Provádíme kácení nebezpečných stromů ve ztížených podmínkách.
+                            Nebezpečné stromy jsou obvykle káceny horolezeckou lanovou technikou.
+                            Tam, kde je to možné, používáme montážní plošinu, vždy ale volíme 
+                            tu nejlevnější a nejvhodnější variantu.
+                        </p>
+                        <p>
+                            Cena za kácení se vždy odvíjí od výšky stromu, velikosti koruny 
+                            a průměru kmene. Především ale záleží a vzdálenosti od zástavby,
+                            vedení atd. Od toho se odvíjí způsob a tedy i náročnost kácení.
+                        </p>
+                        <p>
+                            Provádíme také prořezy stromů a redukce koruny stromů.
+                        </p>
                     </div>
-                </section>
-            </div>
-        </article>
-    </main>
-    <aside class="pre-footer">
-        <div class="container">
-            <p>
-                <strong>Zaujala jsem Vás pro Váš projekt?</strong>
-                Zavolejte mi nebo napište
-            </p>
-            <ul class="menu personal">
-                <li><i class="fa fa-phone"></i><a href="tel:+420000111222">+420 000 111 222</a></li>
-                <li><i class="fa fa-envelope"></i><a href="mailto:sedinaparezu@gmail.com">sedinaparezu@gmail.com</a></li>
-            </ul>
-        </div>
-    </aside>
+                </article>
 
-    <footer>
-        <div class="container">
-            <p class="logo">
-                <strong>Le</strong>Na<i class="fa fa-hippo"></i>
-            </p>
-            <p class="author">
-                Návrh a design připravila LeNa
-                <a href="mailto:sedinaparezu@gmail.com">sedinaparezu@gmail.com</a>
-            </p>
-            <ul class="menu nav-footer">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Orientační ceník</h2>
+                        <h3></h3>
+                        <ul>
+                            <li>pokácení stromu od 500,- Kč za ks</li>
+                            <li>pokácení stromu ve ztížených podmínkách. Cena od 1.000,- kč do 2.500,- kč za ks.</li>
+                            <li>kácení nebezpečných stromů bez chytání dřevní hmoty do lana. Cena od 2.000,- Kč do 7.000,- kč za ks. </li>
+                            <li>kácení nebezpečných stromů s chytáním dřevní hmoty do lana. Cena od 4.000,- Kč do 15.000,- kč za ks. </li>
+                        </ul>                
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Sekání zahrad a pozemků</h2>
+                        <h3></h3>
+                        <p>
+                            Provádíme sekání zahrad a rozlehlejších pozemků zahradní sekačkou,
+                            zahradním traktůrkem, bubnovou sekačkou nebo křovinořezem
+                            včetně likvidace biomasy.
+                        </p>
+                        <p>
+                            Cena se odvíjí od použité techniky, náročnosti terénu,
+                            druhu a kvality travního nebo jiného porostu.
+                            Cena je stanovena podle druhu sekání buď hodinově,
+                            podle sečené plochy nebo jednorázově podle podmínek.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Prodej palivového dřeva</h2>
+                        <h3></h3>
+                        <p>
+                            Tvrdé - buk, dub, habr, javor, jasan, ořech, třešeň, jabloň, bříza
+                        </p>
+                        <p>
+                            Měkké - smrk, borovice, modřín, lípa, topol, vrba
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Ceník palivového dřeva</h2>
+                        <h3>Měrné jednotky</h3>
+                        <ul>Palivové dřevo se dodává v měrných jednotkách:
+                            <li>PRM (prostorový metr) - polena 1m dlouhá, skládaná do krychle 1 x 1 x 1m</li>
+                            <li>PRMS (prostorový metr sypaný) - používá se u špalků a štípaného dřeva, 
+                            špalky a polínka zvolené délky, sypané do krychle 1 x 1 x 1m</li>
+                        </ul>
+                        <p>Ceník</p>
+                    </div>
+                </article>
+
+                <div id="pila"></div>
+
+                <article class="feature">
+                    <figure>
+                        <a href="./images/screens/screenshot-listen-speech.jpg" target="_blank">
+                            <img src="./images/screens/screenshot-listen-speech.jpg"
+                                alt="crave game screenshot sniff" class="box rounded">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+                        <h2>Pila Všemily</h2>
+                        <h3>Ceník stavebního řeziva</h3>
+                        <p>Ceník</p>
+                    </div>
+                </article>
+            </section>
+
         </div>
+    </main>
+
+    <footer id="kontakty">
+                    <div class="kontakty container">
+        
+                        <ul class="footer-item contact menu">
+                            <li><i class="fa fa-phone"></i><a href="tel:+420602964413">+420 602 964 413</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@karelslivka.cz">info@karelslivka.cz</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:slkarel@seznam.cz">slkarel@seznam.cz</a></li>
+                            <li><i class="fa-solid fa-address-card more-icon"></i>Všemily 67, 405 02 Jetřichovice</li>
+                            <li><i class="fa-solid fa-briefcase more-icon">IČ: 68986599</li>
+                        </ul>
+        
+                    </div>
     </footer>
 
-    <script src="js/selectordie.js"></script>
-    <script>
-        $(".menu-dropdown select").selectOrDie();
-    </script>
+        
 
 </body>
 </html>

@@ -1,11 +1,11 @@
 /* CSS Document */
 
 :root {
-    --bg-secondary: #29404E;
+   /* --bg-secondary: url('../images/forest2.jpg') center center no-repeat;*/
     /* --bg-secondary: #000; */
     /* --cl-accent: #FF00A3; */
-    --cl-accent: #DF3B2C;
-    --cl-button: red;
+    --cl-accent: #9DB023;
+    --cl-button: #9DB023;
 }
 
 *,
@@ -28,8 +28,8 @@ html {
 }
 
 body {
-    color: #fff;
-    background: #000;
+    color: #D9DA90;
+    background: #4D350A;
     font-family: 'Bebas Neue', Tahoma, Verdana, sans-serif;
     margin: 0;
 
@@ -54,17 +54,17 @@ img {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-family: Tahoma, Verdana, sans-serif;
     font-weight: bold;
     margin: 1rem 0 0;
-    text-shadow: 1px 1px 0 black;
+    text-shadow: 1px 1px 0 #0F2E14;
 }
 
 input,
 button {
     all: unset;
-    color: black;
+    color: #4D350A;
     font-size: inherit;
     font-family: inherit;
     line-height: 1;
@@ -83,13 +83,13 @@ h3 {
 }
 
 h2 {
-    font-size: 2rem;
-    font-size: clamp(1.75rem, 8vw, 2.5rem);
+    font-size: 1.75rem;
+    font-size: clamp(1.50rem, 8vw, 2.25rem);
 }
 
 h3 {
-    font-size: 2.75rem;
-    font-size: clamp(1.75rem, 10vw, 3.5rem);
+    font-size: 2.25rem;
+    font-size: clamp(1.50rem, 10vw, 2.75rem);
     line-height: 1;
 }
 
@@ -116,4 +116,245 @@ figure {
     padding: 0 1.25rem;
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #4D350A;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4D350A;
+    color: #f5ce59;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .price-list {
+
+  }
+
+  .price-list .kaceni {
+
+}
+
+.price-list .palivo {
+
+}
+
+.price-list .pila{
+
+}
+
+/* HEADER */
+
+header {
+    min-height: 100vh;
+
+    background: url('../images/saw.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-color: #4D350A;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-nav {
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+}
+
+.main-nav ul {
+    font-size: clamp(1.35rem, 6vw, 2.75rem);
+    line-height: 1;
+
+    display: flex;
+    gap: clamp(0.85rem, 4vw, 2rem);
+}
+
+.main-nav a {
+    display: block;
+    padding-top: 0.7rem;
+    padding-bottom: 0.35rem;
+
+    /* FANCY CORNERS */
+    /* padding-top: 2rem;
+	padding-bottom: 2.5rem; */
+}
+
+.main-nav .steam {
+    width: 3em;
+    padding-left: 1rem;
+    vertical-align: middle;
+    display: none;
+}
+
+.main-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li:last-of-type {
+    margin-left: auto;
+}
+
+
+
+/* FANCY CORNERS */
+
+/* .main-nav .container {
+	background-image: url('../images/cornerl.png'), url('../images/cornerr.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0.25rem, 100% 0.25rem;
+	background-size: 12rem;
+	padding: 0 3rem;
+} */
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 420px) {
+
+    header {
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+
+    /* and (orientation: portrait) */
+
+  /*  .logo {
+        flex: 100%;
+        position: relative;
+        left: -68px;
+    }*/
+
+    .main-nav .steam {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 840px) and (orientation: landscape) {
+
+    .main-nav ul {
+        font-size: clamp(1.15rem, 4vw, 2rem);
+    }
+
+   /* .logo {
+        text-align: center;
+        position: relative;
+        top: 2rem;
+    }
+
+    .logo img {
+        width: 75%;
+    }*/
+
+}
+
+/* FEATURES */
+main {
+    background: url('../images/forest2.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.feature {
+    margin-bottom: 4rem;
+    background: #130e06b6;
+}
+
+.feature:last-of-type {
+    margin-bottom: 0;
+}
+
+.feature h2 {
+    color: var(--cl-accent);
+    text-shadow: 3px 3px 0 #0F2E14;
+}
+
+.feature h3 {
+    text-shadow: 1px 1px 0 #0F2E14;
+}
+
+.feature:not(.wishlist) .content {
+    position: relative;
+    bottom: 2rem;
+}
+
+/* TODO: fix phone */
+.wishlist iframe {
+    margin-top: 2rem;
+    width: min(646px, 100%);
+    min-height: 190px;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 810px) {
+
+    main {
+        padding: 10rem 0;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+
+        margin-bottom: 10rem;
+        padding: 1rem 0;
+        border-right: .75rem solid var(--cl-accent);
+    }
+
+    .feature:nth-child(even) {
+        flex-direction: row-reverse;
+        border-left: .75rem solid var(--cl-accent);
+        border-right: none;
+    }
+
+    .feature figure {
+        flex: 6;
+    }
+
+    .feature .content {
+        flex: 4;
+        padding: 0 2rem;
+        position: static;
+    }
+
+}
+
+.box {
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.rounded {
+    border-radius: 0.5rem;
 }

@@ -28,9 +28,9 @@ html {
 }
 
 body {
-    color: #D9DA90;
-    background: #4D350A;
-    font-family: 'Bebas Neue', Tahoma, Verdana, sans-serif;
+    color: #EEECCD;
+    background: #130e06;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 
     overflow: hidden;
@@ -55,7 +55,7 @@ img {
 
 p {
     font-size: 1.15rem;
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     margin: 1rem 0 0;
     text-shadow: 1px 1px 0 #0F2E14;
@@ -63,15 +63,20 @@ p {
 
 input,
 button {
-    all: unset;
-    color: #4D350A;
-    font-size: inherit;
+    font-size: clamp(1.25rem, 8vw, 2.25rem);
     font-family: inherit;
     line-height: 1;
 }
 
 button {
     cursor: pointer;
+    color: #0F2E14;
+    font-weight: bold;
+    background-color: #CFA86E;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 2px 2px 0 #0F2E14;
+    margin-top: 2rem;
 }
 
 
@@ -84,17 +89,18 @@ h3 {
 
 h2 {
     font-size: 1.75rem;
-    font-size: clamp(1.50rem, 8vw, 2.25rem);
+    font-size: clamp(1.25rem, 8vw, 2.25rem);
 }
 
 h3 {
     font-size: 2.25rem;
     font-size: clamp(1.50rem, 10vw, 2.75rem);
     line-height: 1;
+    color: #CFA86E;
 }
 
 figure {
-    margin: 0;
+    margin: 2rem;
 }
 
 
@@ -121,15 +127,17 @@ figure {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #4D350A;
+    border-bottom: 1px dotted #130e06;
   }
   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #4D350A;
+.tooltip .tooltiptext {
+    display: none;
+    width: 240px;
+    background-color: #130e06;
     color: #f5ce59;
     text-align: center;
+    font-weight:normal;
+    font-size:small;
     border-radius: 6px;
     padding: 5px 0;
   
@@ -137,16 +145,29 @@ figure {
     position: absolute;
     z-index: 1;
   }
+
+  .tooltippar {
+    font-weight:normal;
+    font-size:small;
+  }
   
   .tooltip:hover .tooltiptext {
-    visibility: visible;
+    display: block;
   }
 
-  .price-list {
+.price-butt {
 
-  }
+}
 
-  .price-list .kaceni {
+.price-butt:hover, :active, :focus {
+    text-decoration: none;
+}
+
+.price-list {
+    display: none;
+}
+
+.price-list .kaceni {
 
 }
 
@@ -167,7 +188,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
-    background-color: #4D350A;
+    background-color: #130e06;
 
     display: flex;
     align-items: flex-end;
@@ -175,7 +196,7 @@ header {
 
 .main-nav {
     width: 100vw;
-    background: rgba(0, 0, 0, .5);
+    background: #130e06c7;
 
     position: fixed;
     z-index: 2;
@@ -183,50 +204,34 @@ header {
 }
 
 .main-nav ul {
-    font-size: clamp(1.35rem, 6vw, 2.75rem);
+    font-size: clamp(1.15rem, 6vw, 2.25rem);
     line-height: 1;
 
     display: flex;
-    gap: clamp(0.85rem, 4vw, 2rem);
+    gap: clamp(2rem, 4vw, 3.5rem);
 }
 
 .main-nav a {
     display: block;
     padding-top: 0.7rem;
     padding-bottom: 0.35rem;
-
-    /* FANCY CORNERS */
-    /* padding-top: 2rem;
-	padding-bottom: 2.5rem; */
 }
 
-.main-nav .steam {
+/*.main-nav .steam {
     width: 3em;
     padding-left: 1rem;
     vertical-align: middle;
     display: none;
-}
+}*/
 
 .main-nav li {
     display: flex;
     align-items: center;
 }
 
-.main-nav li:last-of-type {
+/*.main-nav li:last-of-type {
     margin-left: auto;
-}
-
-
-
-/* FANCY CORNERS */
-
-/* .main-nav .container {
-	background-image: url('../images/cornerl.png'), url('../images/cornerr.png');
-	background-repeat: no-repeat;
-	background-position: 0% 0.25rem, 100% 0.25rem;
-	background-size: 12rem;
-	padding: 0 3rem;
-} */
+}*/
 
 
 /* RESPONSIVE */
@@ -257,7 +262,7 @@ header {
 @media screen and (max-width: 840px) and (orientation: landscape) {
 
     .main-nav ul {
-        font-size: clamp(1.15rem, 4vw, 2rem);
+        font-size: clamp(0.75rem, 4vw, 1.75rem);
     }
 
    /* .logo {
@@ -274,8 +279,8 @@ header {
 
 /* FEATURES */
 main {
-    background: url('../images/forest2.jpg') center center no-repeat;
-    background-size: cover;
+    background: url('../images/forest.jpg') center center no-repeat;
+    background-size: contain;
     background-attachment: fixed;
     padding: 4rem 0;
     position: relative;
@@ -283,7 +288,7 @@ main {
 
 .feature {
     margin-bottom: 4rem;
-    background: #130e06b6;
+    background: #130e06c7;
 }
 
 .feature:last-of-type {
@@ -299,16 +304,10 @@ main {
     text-shadow: 1px 1px 0 #0F2E14;
 }
 
-.feature:not(.wishlist) .content {
+.feature .content {
     position: relative;
     bottom: 2rem;
-}
-
-/* TODO: fix phone */
-.wishlist iframe {
-    margin-top: 2rem;
-    width: min(646px, 100%);
-    min-height: 190px;
+    padding: 2rem;
 }
 
 /* RESPONSIVE */
@@ -321,25 +320,25 @@ main {
     .feature {
         display: flex;
         align-items: center;
-        gap: 3vw;
-
+        justify-content: center;
         margin-bottom: 10rem;
         padding: 1rem 0;
-        border-right: .75rem solid var(--cl-accent);
+        border-right: .75rem solid #CFA86E;
+        border-radius: 0.5rem;
     }
 
     .feature:nth-child(even) {
         flex-direction: row-reverse;
-        border-left: .75rem solid var(--cl-accent);
+        border-left: .75rem solid #CFA86E;
         border-right: none;
     }
 
     .feature figure {
-        flex: 6;
+        flex: 4;
     }
 
     .feature .content {
-        flex: 4;
+        flex: 6;
         padding: 0 2rem;
         position: static;
     }
@@ -358,3 +357,44 @@ main {
 .rounded {
     border-radius: 0.5rem;
 }
+
+/* FOOTER */
+
+.contacts {
+    width: 100vw;
+    background: #130e06c7;
+    display: flex;
+
+    position: fixed;
+    z-index: 2;
+    bottom: 0px;
+}
+
+.contacts ul {
+    font-size: clamp(0.75rem, 3vw, 1.75rem);
+    line-height: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.25rem, 1vw, 1.5rem);
+    padding-top: 0.7rem;
+    padding-bottom: 0.35rem;
+}
+
+.contacts a {
+    display: block;
+    white-space: nowrap;
+}
+
+.contacts li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contacts i {
+    margin-right: 1rem;
+}
+
+/*.contacts li:last-of-type {
+    margin-left: auto;
+}*/

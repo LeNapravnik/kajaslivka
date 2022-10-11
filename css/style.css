@@ -63,20 +63,21 @@ p {
 
 input,
 button {
-    font-size: clamp(1.25rem, 8vw, 2.25rem);
+    font-size: clamp(1.25rem, 8vw, 2.15rem);
     font-family: inherit;
     line-height: 1;
 }
 
 button {
     cursor: pointer;
-    color: #0F2E14;
+    color: #EEECCD;
     font-weight: bold;
-    background-color: #CFA86E;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 2px 2px 0 #0F2E14;
+    background-color: #0F2E14;
+    border-radius: 0.2rem;
+    border: 1px solid var(--cl-accent);
+    box-shadow: 2px 2px 0 var(--cl-accent);
     margin-top: 2rem;
+    padding: 0.5rem 1.25rem;
 }
 
 
@@ -217,22 +218,10 @@ header {
     padding-bottom: 0.35rem;
 }
 
-/*.main-nav .steam {
-    width: 3em;
-    padding-left: 1rem;
-    vertical-align: middle;
-    display: none;
-}*/
-
 .main-nav li {
     display: flex;
     align-items: center;
 }
-
-/*.main-nav li:last-of-type {
-    margin-left: auto;
-}*/
-
 
 /* RESPONSIVE */
 @media screen and (min-width: 420px) {
@@ -363,11 +352,19 @@ main {
 .contacts {
     width: 100vw;
     background: #130e06c7;
+
     display: flex;
+    flex-direction: column;
 
     position: fixed;
     z-index: 2;
     bottom: 0px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .contacts ul {
@@ -395,6 +392,32 @@ main {
     margin-right: 1rem;
 }
 
-/*.contacts li:last-of-type {
-    margin-left: auto;
-}*/
+.author-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0.35rem;
+    padding-bottom: 0.25rem;
+}
+
+.author-container a {
+    display: inline;
+    font-weight: normal;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:180px;
+    width:320px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 1.25rem;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:180px;
+    width:320px;
+}

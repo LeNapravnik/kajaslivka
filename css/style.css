@@ -150,7 +150,7 @@ header {
     background: #130e06c7;
 
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0px;
 }
 
@@ -195,7 +195,7 @@ main {
 }
 
 .feature h2 {
-    color: var(--cl-accent);
+    color: #EEECCD;
     text-shadow: 3px 3px 0 #0F2E14;
 }
 
@@ -228,7 +228,7 @@ main {
   
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    z-index: 4;
   }
 
   .tooltippar {
@@ -236,32 +236,39 @@ main {
     font-size:small;
   }
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     display: block;
-  }
-
-.price-butt {
-
 }
 
 .price-butt:hover, :active, :focus {
     text-decoration: none;
 }
 
+.felling,
+.firewood,
+.saw {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    /*width: 100vw; /* Full width (cover the whole page) */
+   /* height: 100vh; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cfa86e9b; /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
 .price-list {
-    display: none;
-}
+  /*  position: absolute;*/
+  width: clamp(20rem, 40vw, 50rem);
+  height: clamp(10rem, 40vh, 40rem);
+  margin: 30vh auto;
 
-.price-list .kaceni {
-
-}
-
-.price-list .palivo {
-
-}
-
-.price-list .pila{
-
+  background-color: #130e06;
+  /*  transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);*/
 }
 
 .box {
@@ -287,7 +294,7 @@ main {
     flex-direction: column;
 
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     bottom: 0px;
 }
 
@@ -383,6 +390,10 @@ main {
         flex-direction: row-reverse;
         border-left: .75rem solid #CFA86E;
         border-right: none;
+    }
+
+    .feature:nth-child(even) button {
+        float: right;
     }
 
     .feature figure {

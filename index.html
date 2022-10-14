@@ -18,7 +18,8 @@
     <script src="https://kit.fontawesome.com/8fdb7f27cb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
 	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!--[if lt IE 9]>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src=https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
@@ -85,14 +86,6 @@
                     <figure>
                             <img src="./images/trunks.jpg" alt="kmen stromu" class="box rounded">
                     </figure>
-                    <div class="price-list kaceni">
-                        <ul>
-                            <li>pokácení stromu od 500,- Kč za ks</li>
-                            <li>pokácení stromu ve ztížených podmínkách. Cena od 1.000,- Kč do 2.500,- Kč za ks.</li>
-                            <li>kácení nebezpečných stromů bez chytání dřevní hmoty do lana. Cena od 2.000,- Kč do 7.000,- Kč za ks. </li>
-                            <li>kácení nebezpečných stromů s chytáním dřevní hmoty do lana. Cena od 4.000,- Kč do 15.000,- Kč za ks. </li>
-                        </ul>                
-                    </div>
                     <div class="content">
                         <h3>Rizikové kácení stromů</h3>
                         <p>
@@ -107,14 +100,25 @@
                             kácení - vzdálenosti od zástavby, vedení apod.
                         </p>
                         
-                        <button class="price-butt">Ceník</button>
+                        <button class="price-butt" id="felling">Ceník</button>
+                        <div class="felling">
+                            <div class="price-list rounded">
+                                <h2>Ceník - kácení stromů</h2>
+                                <ul>
+                                    <li>pokácení stromu od 500,- Kč za ks</li>
+                                    <li>pokácení stromu ve ztížených podmínkách. Cena od 1.000,- Kč do 2.500,- Kč za ks.</li>
+                                    <li>kácení nebezpečných stromů bez chytání dřevní hmoty do lana. Cena od 2.000,- Kč do 7.000,- Kč za ks. </li>
+                                    <li>kácení nebezpečných stromů s chytáním dřevní hmoty do lana. Cena od 4.000,- Kč do 15.000,- Kč za ks. </li>
+                                </ul>   
+                            </div>             
+                        </div>
                     </div>
                 </article>
 
 
                 <article class="feature" id="sekani">
                     <figure>
-                            <img src="./images/autumn.jpg" alt="zahrada" class="box rounded">
+                            <img src="./images/autumn.jpg" alt="podzimní zahrada" class="box rounded">
                     </figure>
 
                     <div class="content">
@@ -142,30 +146,33 @@
                         <h3>Prodej palivového dřeva</h3>
                         <p>
                             Prodej špalků, polen, štípaných polínek
-                         </p>
-                        <h2>Ceník</h2>
-                        <div class="price-list palivo">
-                            <table>
-                                <caption class="tooltip">(Kč/PRM(PRMS)&nbsp;bez&nbsp;DPH)
-                                    <span class="tooltiptext">
-                                        <p class="tooltippar">
-                                            PRM (prostorový metr) - polena 1m dlouhá, skládaná do krychle 1 x 1 x 1m
-                                        </p>
-                                        <p class="tooltippar">
-                                            PRMS (prostorový metr sypaný) - používá se u špalků a štípaného dřeva, 
-                                            špalky a polínka zvolené délky, sypané do krychle 1 x 1 x 1m
-                                        </p>
-                                    </span>
-                                </caption>
+                        </p>
+
+                        <button class="price-butt" id="firewood">Ceník</button>
+                        <div class="firewood">
+                            <div class="price-list rounded">
+                                <h2>Ceník - palivové dřevo</h2>
+                                <table>
+                                    <caption class="tooltip">(Kč/PRM(PRMS)&nbsp;bez&nbsp;DPH)
+                                        <span class="tooltiptext">
+                                            <p class="tooltippar">
+                                                PRM (prostorový metr) - polena 1m dlouhá, skládaná do krychle 1 x 1 x 1m
+                                            </p>
+                                            <p class="tooltippar">
+                                                PRMS (prostorový metr sypaný) - používá se u špalků a štípaného dřeva, 
+                                                špalky a polínka zvolené délky, sypané do krychle 1 x 1 x 1m
+                                            </p>
+                                        </span>
+                                    </caption>
                                     <tr>
-                                        <th>Sortiment</th>
-                                        <th class="tooltip">Tvrdé dřevo
-                                            <span class="tooltiptext">buk, dub, habr, javor, jasan, ořech, třešeň, jabloň</span>
-                                        </th>
-                                        <th class="tooltip">Měkké dřevo
+                                        <td>Sortiment</td>
+                                        <td class="tooltip">Tvrdé dřevo
+                                                <span class="tooltiptext">buk, dub, habr, javor, jasan, ořech, třešeň, jabloň</span>
+                                        </td>
+                                        <td class="tooltip">Měkké dřevo
                                             <span class="tooltiptext">smrk, borovice, modřín, lípa, topol, vrba</span>
-                                        </th>
-                                        <th>Bříza</th>
+                                        </td>
+                                        <td>Bříza</td>
                                     </tr>
                                     <tr>
                                         <td>špalky dle přání</td>
@@ -195,7 +202,8 @@
                                         <td>doprava do 20&nbsp;km</td>
                                         <td colspan="3">650,-</td>
                                     </tr>
-                            </table>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -213,9 +221,12 @@
                         <p>
                             Prodej palivového balíkovaného dřeva, hoblování řeziva, pořez vlastní kulatiny
                         </p>
-                        <h2>Ceník</h2>
-                        <div class="price-list pila">
-                            <table>
+
+                        <button class="price-butt" id="saw">Ceník</button>
+                        <div class="saw">
+                            <div class="price-list rounded">
+                                <h2>Pila Všemily - ceník stavebního řeziva</h2>
+                                <table>
                                     <tr>
                                         <td>hranoly smrk do 4&nbsp;m</td>
                                         <td>8&nbsp;500&nbsp;Kč/m<sup>3</sup></td>
@@ -252,7 +263,8 @@
                                         <td>pořez vlastní kulatiny</td>
                                         <td>dle dohody</td>
                                     </tr>
-                            </table>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </article>

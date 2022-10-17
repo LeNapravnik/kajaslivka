@@ -265,10 +265,55 @@ main {
   width: clamp(20rem, 40vw, 50rem);
   height: clamp(10rem, 40vh, 40rem);
   margin: 30vh auto;
+  padding: 0.5rem;
+  overflow: hidden;
 
   background-color: #130e06;
   /*  transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);*/
+}
+
+.price-list h2 {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.row {
+    padding-top: 0.25rem;
+}
+
+.col-text {
+    margin-right: clamp(0.15rem, 1vw, 1rem);
+    width: 40%;
+    float: left;
+}
+
+.col-text-short {
+    margin-right: clamp(0.15rem, 0.75vw, 0.75rem);
+    width: 30%;
+    float: left;
+}
+
+.col-price-text {
+    width: 40%;
+    float: left;
+}
+
+.col-price {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding-right: clamp(0.15rem, 0.5vw, 1rem);
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
 }
 
 .box {

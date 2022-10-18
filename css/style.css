@@ -259,9 +259,7 @@ main {
     font-size:small;
   }
   
-.tooltip:hover,
-.tooltip:focus,
-.tooltip:active .tooltiptext {
+.tooltip:hover .tooltiptext {
     display: block;
 }
 

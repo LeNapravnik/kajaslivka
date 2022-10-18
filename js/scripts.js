@@ -24,4 +24,6 @@ $( document ).ready(function() {
         }
 	});
 
+    $(".menu-dropdown select").selectOrDie();
+
 });

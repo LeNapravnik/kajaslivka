@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/selectordie.css">
 
     <script src="https://kit.fontawesome.com/8fdb7f27cb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
 	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/selectordie.js"></script>
     <!--[if lt IE 9]>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src=https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
@@ -33,7 +35,7 @@
 		<ul class="menu container">
             <li><a href="#">
                     <i class="fa-solid fa-tree"></i>
-                    <strong>Karel Slivka </strong>
+                    <strong>Karel Slivka</strong>
                 </a>
             </li>
             <li><a href="#o_nas">O nás</a></li>
@@ -42,6 +44,17 @@
             <li><a href="#drevo">Prodej dřeva</a></li>
 			<li><a href="#pila">Pila Všemily</a></li>
 		</ul>
+
+        <form class="menu-dropdown">
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option value="#">Úvod</option>
+                <option value="#o_nas">O nás</option>
+                <option value="#kaceni">Rizikové kácení</option>
+                <option value="#sekani">Sekání pozemků</option>
+                <option value="#drevo">Prodej dřeva</option>
+                <option value="#pila">Pila Všemily</option>
+            </select>
+        </form>
 	</nav>
 
     <div class="content-wrapper">
@@ -82,7 +95,7 @@
                     </div>
                 </article>
 
-                <article class="feature" id="kaceni">
+                <article class="feature box rounded" id="kaceni">
                     <figure>
                             <img src="./images/trunks.jpg" alt="kmen stromu" class="box rounded">
                     </figure>
@@ -142,7 +155,7 @@
                 </article>
 
 
-                <article class="feature" id="sekani">
+                <article class="feature box rounded" id="sekani">
                     <figure>
                             <img src="./images/autumn.jpg" alt="podzimní zahrada" class="box rounded">
                     </figure>
@@ -163,7 +176,7 @@
                     </div>
                 </article>
 
-                <article class="feature" id="drevo">
+                <article class="feature box rounded" id="drevo">
                     <figure>
                             <img src="./images/wood.jpg" alt="dřevo" class="box rounded">
                     </figure>
@@ -275,7 +288,7 @@
                     </div>
                 </article>
 
-                <article class="feature" id="pila">
+                <article class="feature box rounded" id="pila">
                     <figure>
                             <img src="./images/planks.jpg" alt="prkna" class="box rounded">
                     </figure>
@@ -388,6 +401,11 @@
                                 src="https://maps.google.com/maps?q=V%C5%A1emily%2067,%20405%2002%20Jet%C5%99ichovice,%20Karel%20Slivka%20-%20Rizikov%C3%A9%20k%C3%A1cen%C3%AD%20strom%C5%AF&t=&z=9&ie=UTF8&iwloc=&output=embed" 
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
+                        </div>
+                        <div class="map-ico">
+                            <a href="https://goo.gl/maps/f2Q1RDWNktYk53Tn6" target="_blank">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </a>
                         </div>
                     </div>
                     <ul class="menu container">

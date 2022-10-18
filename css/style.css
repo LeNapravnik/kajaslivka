@@ -176,6 +176,29 @@ header {
     padding-bottom: 0.5rem;
 }
 
+.menu-dropdown {
+    margin: 3.125em auto; /* 50/16 */
+    text-align: center;
+}
+
+.menu-dropdown {
+    display: none;
+    margin: 2rem 0 2.5rem;
+    font-size: 1.3rem;
+}
+
+.menu-dropdown select{
+    color: #F7F3D4;
+    background: #130e06c7;
+    border: 1px solid #130e06c7;
+    border-radius: .3em;
+    width: 20rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
 /* FEATURES */
 main {
     background: url('../images/forest.jpg') center center no-repeat;
@@ -236,7 +259,9 @@ main {
     font-size:small;
   }
   
-.tooltip:hover .tooltiptext {
+.tooltip:hover,
+.tooltip:focus,
+.tooltip:active .tooltiptext {
     display: block;
 }
 
@@ -413,6 +438,13 @@ main {
     height: 160px;
 }
 
+.map-ico {
+    display: none;
+    line-height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 810px) {
@@ -500,4 +532,25 @@ main {
         gap: clamp(0.5rem, 1vw, 1rem);
     }
 
+}
+
+@media screen and (max-width: 740px) {
+    .gmap_canvas {
+        display: none;
+    }
+
+    .map-ico {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 605px) {
+    .main-nav ul {
+       display: none;
+    }
+
+    .menu-dropdown {
+        display: block;
+    }
 }

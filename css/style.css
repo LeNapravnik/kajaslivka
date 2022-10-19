@@ -232,6 +232,13 @@ main {
     padding: 2rem;
 }
 
+.img-ref img{
+    cursor: pointer;
+    margin-top: 2rem;
+    max-width: 6rem;
+    height: auto;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -259,7 +266,7 @@ main {
     font-size:small;
   }
   
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext, :active .tooltiptext, :focus .tooltiptext {
     display: block;
 }
 
@@ -349,7 +356,7 @@ main {
 }
 
 .rounded {
-    border-radius: 0.5rem;
+    border-radius: 0.35rem;
 }
 
 /* FOOTER */
@@ -377,7 +384,7 @@ main {
 }
 
 .contact-container ul {
-    font-size: clamp(0.75rem, 3vw, 1.75rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     line-height: 1;
 
     display: flex;
@@ -438,9 +445,11 @@ main {
 
 .map-ico {
     display: none;
-    line-height: 5rem;
-    font-size: 3rem;
-    text-align: center;
+    line-height: clamp(1.5rem, 1vw, 5rem);
+    font-size: clamp(1.5rem, 1vw, 3rem);
+    text-align: right;
+    margin-left: clamp(0.15rem, 1vw, 2rem);
+    padding-top: 1.15rem;
 }
 
 /* RESPONSIVE */
@@ -533,14 +542,13 @@ main {
 }
 
 @media screen and (max-width: 740px) {
-    .gmap_canvas {
+    .mapouter {
         display: none;
     }
 
     .map-ico {
         display: block;
     }
-    
 }
 
 @media screen and (max-width: 605px) {

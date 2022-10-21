@@ -245,30 +245,17 @@ main {
     border-bottom: 1px dotted #130e06;
   }
   
-.tooltip .tooltiptext {
-    display: none;
-    width: 240px;
-    background-color: #130e06;
+.tooltiptext {
     color: #f5ce59;
-    text-align: center;
     font-weight:normal;
     font-size:small;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 4;
-  }
-
-  .tooltippar {
-    font-weight:normal;
-    font-size:small;
+    margin: 0;
+    padding: 0.25rem 0;
   }
   
-.tooltip:hover .tooltiptext, :active .tooltiptext, :focus .tooltiptext {
+/*.tooltip:hover .tooltiptext, :active .tooltiptext, :focus .tooltiptext {
     display: block;
-}
+}*/
 
 .price-butt:hover, :active, :focus {
     text-decoration: none;
@@ -296,11 +283,9 @@ main {
   height: clamp(10rem, 40vh, 40rem);
   margin: 30vh auto;
   padding: 0.5rem;
-  overflow: hidden;
+  overflow: auto;
 
   background-color: #130e06;
-  /*  transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);*/
 }
 
 .price-list h2 {

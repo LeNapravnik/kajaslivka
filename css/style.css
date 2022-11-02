@@ -252,10 +252,6 @@ main {
     margin: 0;
     padding: 0.25rem 0;
   }
-  
-/*.tooltip:hover .tooltiptext, :active .tooltiptext, :focus .tooltiptext {
-    display: block;
-}*/
 
 .price-butt:hover, :active, :focus {
     text-decoration: none;
@@ -266,8 +262,6 @@ main {
 .saw {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
-    /*width: 100vw; /* Full width (cover the whole page) */
-   /* height: 100vh; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
@@ -435,6 +429,11 @@ main {
     text-align: right;
     margin-left: clamp(0.15rem, 1vw, 2rem);
     padding-top: 1.15rem;
+}
+
+.map-ico:hover, 
+.map-ico:focus {
+    color: #b89054;
 }
 
 /* RESPONSIVE */
